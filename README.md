@@ -25,3 +25,7 @@ docker build -t api_sample .
 ```
 docker compose up -d
 ```
+
+4. Once application starts, you can access OpenAPI documentation at: http://localhost:8080/swagger-ui/index.html#/
+
+![](.README_images/openapi.png)

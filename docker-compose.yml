@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+
+  database:
+    container_name: mysql_sample
+    image: mysql
+    command: --init-file /data/application/init.sql
+    volumes:
+      - ./init.sql:/data/application/init.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: test
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+    ports:
+      - "3306:3306"
+  java:
+    container_name: api_sample
+    image: api_sample
+    depends_on:
+      - database
+    ports:
+      - "8080:8080"
+    links:
+      - database

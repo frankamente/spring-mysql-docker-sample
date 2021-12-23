@@ -1,7 +1,9 @@
 # Getting Started
 
 ### Introduction
-For further reference, please consider the following sections:
+This project is a sample project to have a simple **CRUD Rest API** running in Docker. 
+
+The database is **MySQL**
 
 ### Requirements
 
@@ -23,13 +25,3 @@ docker build -t api_sample .
 ```
 docker compose up -d
 ```
-
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
-* [Accessing JPA Data with REST](https://spring.io/guides/gs/accessing-data-rest/)
-* [Accessing Neo4j Data with REST](https://spring.io/guides/gs/accessing-neo4j-data-rest/)
-* [Accessing MongoDB Data with REST](https://spring.io/guides/gs/accessing-mongodb-data-rest/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
-
